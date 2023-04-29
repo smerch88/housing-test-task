@@ -1,0 +1,22 @@
+{
+  "id": "header",
+  "name": "Header",
+  "btn": "Sign Up!",
+  "menuItems": [
+    {
+      "id": "1",
+      "label": "About Us",
+      "url": "#"
+    },
+    {
+      "id": "2",
+      "label": "Article",
+      "url": "#"
+    },
+    {
+      "id": "3",
+      "label": "Property",
+      "url": "#"
+    }
+  ]
+}

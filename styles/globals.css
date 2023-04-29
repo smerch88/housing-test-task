@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-lexend font-normal text-text_main;
+  }
+}
+
+@layer components {
+  /* Classes for header */
+  .sticky .header-logo {
+    @apply py-5 xl:py-2;
+  }
+  .sticky .menu-scroll.active {
+    @apply opacity-70;
+  }
+  /* End classes fo header */
+}
+
+/* Classes for background Hero */
+.hero-bg {
+  background-image: url('/images/hero/bg.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50% auto;
+  border-bottom-left-radius: 20px;
+}
+
+/* End classes background Hero */

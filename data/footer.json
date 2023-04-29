@@ -1,0 +1,67 @@
+{
+  "edges": {
+    "id": "footer",
+    "name": "Footer",
+    "PropertyItems": [
+      {
+        "id": "1",
+        "label": "House",
+        "url": "#"
+      },
+      {
+        "id": "2",
+        "label": "Apartment",
+        "url": "#"
+      },
+      {
+        "id": "3",
+        "label": "Villa",
+        "url": "#"
+      }
+    ],
+    "ArticleItems": [
+      {
+        "id": "1",
+        "label": "New Article",
+        "url": "#"
+      },
+      {
+        "id": "2",
+        "label": "Popular Article",
+        "url": "#"
+      },
+      {
+        "id": "3",
+        "label": "Most Read",
+        "url": "#"
+      },
+      {
+        "id": "4",
+        "label": "Tips & Tricks",
+        "url": "#"
+      }
+    ],
+    "ContactItems": [
+      {
+        "id": "1",
+        "label": "2464 Royal Ln. Mesa, New Jersey 45463",
+        "url": "#"
+      },
+      {
+        "id": "2",
+        "label": "(671) 555-0110",
+        "url": "#"
+      },
+      {
+        "id": "3",
+        "label": "info@hounter.com",
+        "url": "#"
+      }
+    ]
+  },
+  "social": {
+    "facebook": "#",
+    "twitter": "#",
+    "instagramm": "#"
+  }
+}
