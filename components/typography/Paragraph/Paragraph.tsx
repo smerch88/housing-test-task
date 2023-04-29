@@ -3,8 +3,7 @@ import cn from 'classnames';
 import { ParagraphProps } from './Paragraph.props';
 
 export const Paragraph: FC<ParagraphProps> = ({
-  color = 'dark',
-  size = 'big',
+  variant = 'primary',
   children,
   className,
   ...props
@@ -12,13 +11,11 @@ export const Paragraph: FC<ParagraphProps> = ({
   return (
     <p
       className={cn(
-        'font-light',
+        '',
         {
-          'text-dark': color === 'dark',
-          'text-white_light': color === 'white',
-          'text-base md:text-xl': size === 'big',
-          'text-sm md:text-base': size === 'small',
-          'text-xs': size === 'extrasmall',
+          'text-base leading-[calc(28/16)] opacity-75': variant === 'primary',
+          'font-font-medium text-sm leading-[calc(22/14)] text-secondary':
+            variant === 'secondary',
         },
         className,
       )}

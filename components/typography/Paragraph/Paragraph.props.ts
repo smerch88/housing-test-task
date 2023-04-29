@@ -1,8 +1,7 @@
 import { ReactNode } from 'react';
 
 export interface ParagraphProps {
-  color?: 'dark' | 'white';
-  size?: 'big' | 'small' | 'extrasmall';
+  variant?: 'primary' | 'secondary';
   className?: string;
   children: ReactNode;
 }

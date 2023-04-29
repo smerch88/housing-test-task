@@ -9,7 +9,7 @@ export const Section: FC<SectionProps> = ({
   ...props
 }) => {
   return (
-    <section className={cn('py-10 xl:py-[60px]', className)} {...props}>
+    <section className={cn('', className)} {...props}>
       {children}
     </section>
   );
