@@ -12,6 +12,18 @@
   body {
     @apply bg-white font-lexend font-normal text-text_main;
   }
+
+  .font-outline-1 {
+    -webkit-text-stroke: 1px #1b1c57;
+  }
+
+  .font-outline-0 {
+    -webkit-text-stroke: 0px #1b1c57;
+  }
+
+  .heading {
+    text-shadow: -1px 0 #1b1c57, 0 1px #1b1c57, 1px 0 #1b1c57, 0 -1px #1b1c57;
+  }
 }
 
 @layer components {
@@ -27,11 +39,11 @@
 
 /* Classes for background Hero */
 .hero-bg {
-  background-image: url('/images/hero/bg.png');
+  background-image: url('/images/hero/bg.png'),
+    url('/images/hero/hero-left.png'), url('/images/hero/hero-right.png');
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 50% auto;
-  border-bottom-left-radius: 20px;
+  background-position: top right, top left, 15% 0;
+  background-size: 50% auto, auto, auto;
 }
 
 /* End classes background Hero */

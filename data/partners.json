@@ -1,0 +1,28 @@
+{
+  "partners": [
+    {
+      "id": 1,
+      "image": "/images/partners/traveloka.svg",
+      "width": 83,
+      "height": 64
+    },
+    {
+      "id": 2,
+      "image": "/images/partners/tiket.svg",
+      "width": 83,
+      "height": 64
+    },
+    {
+      "id": 3,
+      "image": "/images/partners/airbnb.svg",
+      "width": 83,
+      "height": 64
+    },
+    {
+      "id": 4,
+      "image": "/images/partners/tripadvisor.svg",
+      "width": 83,
+      "height": 64
+    }
+  ]
+}

@@ -6,7 +6,6 @@ export interface TitleProps
     HTMLHeadingElement
   > {
   tag?: 'h1' | 'h2' | 'h3';
-  variant?: 'dark' | 'light';
   children: ReactNode;
   content?: string;
 }
