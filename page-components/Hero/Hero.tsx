@@ -1,3 +1,4 @@
+import { Button } from '@/components/button/Button';
 import { Section } from '@/components/common/Section';
 import { Paragraph } from '@/components/typography/Paragraph';
 import { Title } from '@/components/typography/Title';
@@ -7,7 +8,7 @@ import Image from 'next/image';
 export const Hero = () => {
   return (
     <Section className="hero-bg pb-[220px] pt-[182px]">
-      <div className="container min-h-[720px]">
+      <div className="container">
         <div className="max-w-[510px]">
           <Title tag="h1" className="font-outline-1 mb-6">
             find the place to <br /> live{' '}
@@ -22,6 +23,7 @@ export const Hero = () => {
             where it will be easier for you
           </Paragraph>
           <Paragraph className="leading-[32/16]">Our Partnership</Paragraph>
+          {/* partners */}
           <ul className="flex gap-8">
             {data.partners.map(item => (
               <li key={item.id}>
@@ -34,6 +36,7 @@ export const Hero = () => {
               </li>
             ))}
           </ul>
+          {/*end of partners */}
         </div>
       </div>
     </Section>
