@@ -6,7 +6,8 @@ export interface ButtonProps
     HTMLButtonElement
   > {
   children: ReactNode;
-  variant?: 'primary' | 'ghost' | 'secondary' | 'simple';
-  disabled?: boolean;
-  arrow?: boolean;
+  variant?: 'primary' | 'ghost' | 'secondary';
+  arrow?: 'right' | 'down';
+  icon?: 'house' | 'villa' | 'apartments' | 'phone';
+  link?: boolean;
 }
