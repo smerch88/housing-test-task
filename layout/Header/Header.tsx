@@ -105,7 +105,7 @@ export const Header: FC = () => {
               </nav>
             </div>
           </div>
-          <Button className="hidden min-w-[110px] text-[14px] leading-[calc(22/14)] text-accent_heavy md:ml-5 md:block md:text-center mdOnly:mr-20">
+          <Button className=" hidden min-w-[110px] text-[14px] font-semibold leading-[calc(22/14)] text-accent_heavy md:ml-5 md:block md:text-center mdOnly:mr-20">
             {data.btn}
           </Button>
         </div>
