@@ -5,6 +5,7 @@ import { Title } from '@/components/typography/Title';
 import Image from 'next/image';
 
 import { FeaturedHouseCardProps } from './FeaturedHouseCard.props';
+import { TrendLabel } from '@/components/common/TrendLabel';
 
 export const FeaturedHouseCard: FC<FeaturedHouseCardProps> = ({
   text,
@@ -22,7 +23,7 @@ export const FeaturedHouseCard: FC<FeaturedHouseCardProps> = ({
 }) => {
   return (
     <CardWrapper tag="div" className="max-h-[552px]">
-      <div className="">
+      <div className="relative">
         <Image
           src={path}
           alt={'house image'}
@@ -30,6 +31,7 @@ export const FeaturedHouseCard: FC<FeaturedHouseCardProps> = ({
           height={height}
           className="mb-6"
         />
+        <TrendLabel tag={tag} className="absolute bottom-4 left-4" />
       </div>
       <Title tag="h3" className="mb-2  text-[24px] leading-[calc(32/24)]">
         {title}
