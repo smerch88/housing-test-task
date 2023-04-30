@@ -3,8 +3,12 @@ import { Paragraph } from '@/components/typography/Paragraph';
 import { SearchBar } from '@/components/common/SearchBar';
 import { Title } from '@/components/typography/Title';
 import data from '@/data/partners.json';
+import sliderData from '@/data/headerslider.json';
 import Image from 'next/image';
 import { useState } from 'react';
+import { ProgramsSlide } from '@/components/slider/ProgramsSlide';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
 
 export const Hero = () => {
   const [searchValue, setSearchValue] = useState('');
@@ -14,7 +18,7 @@ export const Hero = () => {
   };
   return (
     <Section className="hero-bg pb-[220px] pt-[182px]">
-      <div className="container">
+      <div className="container relative">
         <div className="max-w-[510px]">
           <Title tag="h1" className="font-outline-1 mb-6">
             find the place to <br /> live{' '}
@@ -49,6 +53,47 @@ export const Hero = () => {
             ))}
           </ul>
           {/*end of partners */}
+        </div>
+        <div className="absolute bottom-[-52px] right-0 w-[50%] overflow-hidden pl-12">
+          <Swiper
+            wrapperTag="ul"
+            grabCursor={true}
+            // slidesPerView={'auto'}
+            // rewind={true}
+            loop={true}
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              // 320: {
+              //   slidesPerView: 1,
+              //   spaceBetween: 15,
+              // },
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+              },
+              1440: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+            }}
+          >
+            {sliderData.slides.map(slide => (
+              <SwiperSlide tag="li" key={slide.id} className="m-0">
+                <ProgramsSlide
+                  id={slide.id}
+                  text={slide.text}
+                  title={slide.title}
+                  path={slide.path}
+                  width={slide.width}
+                  height={slide.height}
+                />{' '}
+              </SwiperSlide>
+            ))}{' '}
+          </Swiper>
         </div>
       </div>
     </Section>
