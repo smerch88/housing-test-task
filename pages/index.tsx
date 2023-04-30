@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { withLayout } from '@/layout/Layout';
 
 import { Hero } from '@/page-components/Hero/Hero';
+import { Recomendations } from '@/page-components/Recomendations/Recomendations';
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
         <title>Housing</title>
       </Head>
       <Hero />
+      <Recomendations />
     </>
   );
 };

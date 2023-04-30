@@ -17,7 +17,7 @@ export const Hero = () => {
     setSearchValue(newValue);
   };
   return (
-    <Section className="hero-bg pb-[220px] pt-[182px]">
+    <Section className="hero-bg pb-[230px] pt-[182px]">
       <div className="container relative">
         <div className="max-w-[510px]">
           <Title tag="h1" className="font-outline-1 mb-6">
@@ -54,14 +54,15 @@ export const Hero = () => {
           </ul>
           {/*end of partners */}
         </div>
-        <div className="absolute bottom-[-52px] right-0 w-[50%] overflow-hidden pl-12">
+        <div className="absolute bottom-[-52px] right-0 w-[50%] pl-6">
           <Swiper
             wrapperTag="ul"
-            grabCursor={true}
+            grabCursor={false}
             // slidesPerView={'auto'}
             // rewind={true}
             loop={true}
             modules={[Autoplay]}
+            allowTouchMove={false}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
@@ -73,11 +74,11 @@ export const Hero = () => {
               // },
               768: {
                 slidesPerView: 1,
-                spaceBetween: 15,
+                spaceBetween: 16,
               },
               1440: {
                 slidesPerView: 2,
-                spaceBetween: 15,
+                spaceBetween: 16,
               },
             }}
           >
