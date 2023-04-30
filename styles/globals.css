@@ -43,7 +43,11 @@
     url('/images/hero/hero-left.png'), url('/images/hero/hero-right.png');
   background-repeat: no-repeat;
   background-position: top right, top left, 15% 0;
-  background-size: 50% auto, auto, auto;
+  background-size: 50% 720px, auto, auto;
 }
 
 /* End classes background Hero */
+
+.swiper-wrapper {
+  padding-top: 92px;
+}

@@ -5,35 +5,27 @@ import cn from 'classnames';
 import { SwiperNavProps } from './SwiperNav.props';
 import Arrow from '@/public/images/feedback/arrow.svg';
 
-export const SwiperNav: FC<SwiperNavProps> = ({
-  color = 'blue',
-  className = '',
-}) => {
+export const SwiperNav: FC<SwiperNavProps> = ({ className = '' }) => {
   const swiper = useSwiper();
 
   return (
-    <div className={cn('flex items-center justify-center gap-6', className)}>
+    <div className={cn('flex items-center justify-center gap-4', className)}>
       <button
-        aria-label="Попередній слайд"
+        aria-label="Previous Slide"
         onClick={() => swiper.slidePrev()}
-        className={`py-4 hover:text-secondary focus:text-secondary ${
-          color === 'blue' ? 'text-hover' : 'text-white_light'
-        }`}
+        className={`rounded-[32px] bg-border px-4 py-3 text-dark  duration-300 hover:bg-accent hover:text-white`}
       >
-        <Arrow className="h-[18px] w-[38px] rotate-180 duration-300 " />
+        <Arrow className="h-7 w-7 rotate-180 fill-current" />
       </button>
 
       <button
-        aria-label="Наступний слайд"
+        aria-label="Next Slide"
         onClick={() => {
           swiper.slideNext();
-          //FIXME: fix this
         }}
-        className={`py-4 hover:text-secondary focus:text-secondary ${
-          color === 'blue' ? 'text-hover' : 'text-white_light'
-        }`}
+        className={`rounded-[32px] bg-border px-4 py-3 text-dark  duration-300 hover:bg-accent hover:text-white`}
       >
-        <Arrow className="h-[18px] w-[38px] duration-300" />
+        <Arrow className="h-7 w-7 fill-current" />
       </button>
     </div>
   );

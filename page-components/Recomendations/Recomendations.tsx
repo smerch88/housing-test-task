@@ -7,7 +7,6 @@ import { FeaturedHouseCard } from '@/components/slider/FeaturedHouseCard';
 import data from '@/data/featured.json';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
 import { SwiperNav } from '@/components/common/SwiperNav';
 import { useState } from 'react';
 
@@ -21,7 +20,7 @@ export const Recomendations = () => {
   return (
     <Section className="relative pb-[120px]">
       <div className="container">
-        <div className="mb-10 flex pt-2">
+        <div className="absolute !z-[999999999] mb-10 flex pt-2">
           <Title tag="h2" className="ml-10 mr-[140px]">
             Featured House
           </Title>
@@ -66,7 +65,6 @@ export const Recomendations = () => {
           wrapperTag="ul"
           grabCursor={true}
           loop={true}
-          modules={[Autoplay]}
           breakpoints={{
             // 320: {
             //   slidesPerView: 1,
@@ -82,6 +80,7 @@ export const Recomendations = () => {
             },
           }}
         >
+          <SwiperNav className="absolute right-0 top-0 !z-[999999999]" />
           {filteredSlides.map(card => (
             <SwiperSlide tag="li" key={card.id} className="m-0">
               <FeaturedHouseCard
@@ -101,7 +100,6 @@ export const Recomendations = () => {
               />
             </SwiperSlide>
           ))}
-          <SwiperNav color="blue" className="" />
         </Swiper>
       </div>
     </Section>
