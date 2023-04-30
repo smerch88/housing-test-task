@@ -23,10 +23,10 @@ export const Button: FC<ButtonProps> = ({
         'flex items-center gap-2 rounded-[32px] border-[1px] border-solid px-6 py-3',
         className,
         {
-          ['border-buttonBg bg-buttonBg fill-current text-accent']:
+          ['border-buttonBg bg-buttonBg fill-current font-semibold text-accent']:
             variant == 'primary',
-          ['fill-current text-secondary']: variant == 'ghost',
-          ['border-accent bg-accent fill-current text-white']:
+          ['border-secondary fill-current text-secondary']: variant == 'ghost',
+          ['border-accent bg-accent fill-current text-[14px] leading-[calc(22/14)] text-white']:
             variant == 'secondary',
         },
       )}

@@ -38,6 +38,7 @@ module.exports = {
         gray_light: '#F0F3FD',
         white: '#FFFFFF',
         accent: '#10B981',
+        accent_heavy: '#047857',
         buttonBg: '#D1FAE5',
         btnLinkBg: 'rgba(255, 255, 255, 0.1)',
       },
