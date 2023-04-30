@@ -8,6 +8,7 @@ import { Logo } from '@/components/typography/Logo';
 
 import { MenuItemProps } from './Header.props';
 import data from '@/data/header.json';
+import { Button } from '@/components/button/Button';
 
 export const Header: FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -76,7 +77,7 @@ export const Header: FC = () => {
                     <li key={menuItem.id} className="group relative">
                       <Link
                         activeClass="text-primary"
-                        className="flex cursor-pointer whitespace-nowrap rounded-[32px] border-2 border-solid border-white bg-btnLinkBg text-lg text-white hover:outline-primary focus:outline-primary group-hover:text-primary xl:inline-flex xl:px-4 xl:py-2 notXl:justify-center
+                        className="flex cursor-pointer whitespace-nowrap rounded-[32px] border-2 border-solid border-white bg-btnLinkBg text-sm leading-[calc(18/14)] text-white hover:outline-primary focus:outline-primary group-hover:text-primary xl:inline-flex xl:px-4 xl:py-2 notXl:justify-center
                         "
                         href=""
                         duration={100}
@@ -104,14 +105,9 @@ export const Header: FC = () => {
               </nav>
             </div>
           </div>
-          <BtnLink
-            variant="ghost"
-            href={'program'}
-            scroll
-            className="hidden md:ml-5 md:block md:text-center mdOnly:mr-20"
-          >
+          <Button className="hidden min-w-[110px] text-[14px] leading-[calc(22/14)] text-accent_heavy md:ml-5 md:block md:text-center mdOnly:mr-20">
             {data.btn}
-          </BtnLink>
+          </Button>
         </div>
       </div>
     </header>

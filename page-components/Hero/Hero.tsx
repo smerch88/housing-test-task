@@ -1,11 +1,17 @@
-import { Button } from '@/components/button/Button';
 import { Section } from '@/components/common/Section';
 import { Paragraph } from '@/components/typography/Paragraph';
+import { SearchBar } from '@/components/common/SearchBar';
 import { Title } from '@/components/typography/Title';
 import data from '@/data/partners.json';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export const Hero = () => {
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleSearchChange = (newValue: string) => {
+    setSearchValue(newValue);
+  };
   return (
     <Section className="hero-bg pb-[220px] pt-[182px]">
       <div className="container">
@@ -22,6 +28,12 @@ export const Hero = () => {
             Everything you need about finding your place to live will be here,
             where it will be easier for you
           </Paragraph>
+          <SearchBar
+            value={searchValue}
+            onChange={handleSearchChange}
+            placeholder="Search for the location you want!"
+            className="mb-8"
+          />
           <Paragraph className="leading-[32/16]">Our Partnership</Paragraph>
           {/* partners */}
           <ul className="flex gap-8">
