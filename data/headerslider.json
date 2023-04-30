@@ -1,0 +1,52 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "path": "/images/heroSlider/people.png",
+      "title": "1K+ People",
+      "text": "Successfully Getting Home",
+      "width": 114,
+      "height": 60
+    },
+    {
+      "id": 2,
+      "path": "/images/heroSlider/house.png",
+      "title": "56 Houses",
+      "text": "Sold Monthly",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": 3,
+      "path": "/images/heroSlider/girl.png",
+      "title": "4K+",
+      "text": "People Looking for New Homes",
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 4,
+      "path": "/images/heroSlider/people.png",
+      "title": "1K+ People",
+      "text": "Successfully Getting Home",
+      "width": 114,
+      "height": 60
+    },
+    {
+      "id": 5,
+      "path": "/images/heroSlider/house.png",
+      "title": "56 Houses",
+      "text": "Sold Monthly",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": 6,
+      "path": "/images/heroSlider/girl.png",
+      "title": "4K+",
+      "text": "People Looking for New Homes",
+      "width": 60,
+      "height": 60
+    }
+  ]
+}

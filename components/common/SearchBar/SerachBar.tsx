@@ -20,7 +20,7 @@ export const SearchBar: FC<SearchBarProps> = ({
       </span>
       <input
         type="text"
-        className="w-full rounded-[32px] border-none bg-transparent pl-14"
+        className="w-full rounded-[32px] border-none bg-transparent pl-14 text-secondary"
         placeholder={placeholder}
         value={value}
         onChange={e => onChange(e.target.value)}

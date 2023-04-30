@@ -3,7 +3,6 @@ import cn from 'classnames';
 import { CardWrapperProps } from './CardWrapper.props';
 
 export const CardWrapper: FC<CardWrapperProps> = ({
-  hovered = true,
   tag,
   children,
   className,
@@ -12,16 +11,7 @@ export const CardWrapper: FC<CardWrapperProps> = ({
   const Tag = tag ?? 'li';
 
   return (
-    <Tag
-      className={cn(
-        'shadow-card rounded-lg',
-        {
-          'hover:card_hover': hovered,
-        },
-        className,
-      )}
-      {...props}
-    >
+    <Tag className={cn('rounded-[32px]', className)} {...props}>
       {children}
     </Tag>
   );
