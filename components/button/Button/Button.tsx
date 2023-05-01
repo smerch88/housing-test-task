@@ -1,6 +1,7 @@
 import cn from 'classnames';
 
 import House from 'public/images/buttonIcons/house.svg';
+import Phone from 'public/images/buttonIcons/phone.svg';
 import Villa from 'public/images/buttonIcons/villa.svg';
 import Apartments from 'public/images/buttonIcons/apartments.svg';
 import ArrowDown from 'public/images/arrows/arrow-down.svg';
@@ -33,6 +34,7 @@ export const Button: FC<ButtonProps> = ({
       )}
       {...props}
     >
+      {icon === 'phone' && <Phone className={'h-5 w-5 fill-current'} />}
       {icon === 'house' && <House className={'h-5 w-5 fill-current'} />}
       {icon === 'villa' && <Villa className={'h-5 w-5 fill-current'} />}
       {icon === 'apartments' && (

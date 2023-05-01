@@ -14,7 +14,7 @@ export const Paragraph: FC<ParagraphProps> = ({
         '',
         {
           'text-base leading-[calc(28/16)] opacity-75': variant === 'primary',
-          'font-font-medium text-sm leading-[calc(22/14)] text-secondary':
+          'text-sm font-medium leading-[calc(22/14)] text-secondary':
             variant === 'secondary',
         },
         className,
