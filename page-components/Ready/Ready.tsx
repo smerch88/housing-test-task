@@ -112,8 +112,8 @@ export const Ready = () => {
                     src={card.path}
                     alt="house"
                     fill
-                    objectFit="cover"
-                    objectPosition="center"
+                    object-fit="cover"
+                    object-position="center"
                   />
                 </SwiperSlide>
               ))}
@@ -147,13 +147,7 @@ export const Ready = () => {
                   key={card.id}
                   className="m-0 rounded-[4px]"
                 >
-                  <Image
-                    src={card.path}
-                    alt="house"
-                    fill
-                    objectFit="cover"
-                    objectPosition="center"
-                  />
+                  <Image src={card.path} alt="house" fill object-fit="cover" />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -190,8 +184,7 @@ export const Ready = () => {
                     src={card.path}
                     alt="house"
                     fill
-                    objectFit="cover"
-                    objectPosition="center"
+                    object-position="center"
                   />
                 </SwiperSlide>
               ))}
