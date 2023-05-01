@@ -1,0 +1,20 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "path": "/images/sell/1.png"
+    },
+    {
+      "id": 2,
+      "path": "/images/sell/2.png"
+    },
+    {
+      "id": 3,
+      "path": "/images/sell/3.png"
+    },
+    {
+      "id": 4,
+      "path": "/images/sell/4.png"
+    }
+  ]
+}

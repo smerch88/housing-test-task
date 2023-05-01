@@ -7,6 +7,9 @@ import Bath from '/public/images/sell/bath.svg';
 import Stairs from '/public/images/sell/stairs.svg';
 import Image from 'next/image';
 import { Button } from '@/components/button/Button';
+import data from '@/data/readyslider.json';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
 
 export const Ready = () => {
   return (
@@ -74,6 +77,125 @@ export const Ready = () => {
                 Contact Now
               </Button>
             </div>
+          </div>
+          <div className="relative h-[459px]">
+            <Swiper
+              className="h-[416px] w-[488px]"
+              wrapperTag="ul"
+              grabCursor={false}
+              loop={true}
+              initialSlide={0}
+              modules={[Autoplay]}
+              allowTouchMove={false}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: true,
+              }}
+              breakpoints={{
+                768: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+                1440: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+              }}
+            >
+              {data.slides.map(card => (
+                <SwiperSlide
+                  tag="li"
+                  key={card.id}
+                  className="m-0 rounded-[4px]"
+                >
+                  <Image
+                    src={card.path}
+                    alt="house"
+                    fill
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <Swiper
+              className="absolute bottom-0 left-0 z-50 h-[168px] w-[296px]"
+              wrapperTag="ul"
+              grabCursor={false}
+              loop={true}
+              initialSlide={1}
+              modules={[Autoplay]}
+              allowTouchMove={false}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: true,
+              }}
+              breakpoints={{
+                768: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+                1440: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+              }}
+            >
+              {data.slides.map(card => (
+                <SwiperSlide
+                  tag="li"
+                  key={card.id}
+                  className="m-0 rounded-[4px]"
+                >
+                  <Image
+                    src={card.path}
+                    alt="house"
+                    fill
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <Swiper
+              className="absolute bottom-0 left-[308px] z-50 h-[80px] w-[200px]"
+              wrapperTag="ul"
+              grabCursor={false}
+              loop={true}
+              initialSlide={2}
+              modules={[Autoplay]}
+              allowTouchMove={false}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: true,
+              }}
+              breakpoints={{
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 8,
+                },
+                1440: {
+                  slidesPerView: 2,
+                  spaceBetween: 8,
+                },
+              }}
+            >
+              {data.slides.map(card => (
+                <SwiperSlide
+                  tag="li"
+                  key={card.id}
+                  className="m-0 rounded-[4px]"
+                >
+                  <Image
+                    src={card.path}
+                    alt="house"
+                    fill
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>
