@@ -4,6 +4,7 @@ import { withLayout } from '@/layout/Layout';
 
 import { Hero } from '@/page-components/Hero/Hero';
 import { Recomendations } from '@/page-components/Recomendations/Recomendations';
+import { Ready } from '@/page-components/Ready/Ready';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       </Head>
       <Hero />
       <Recomendations />
+      <Ready />
     </>
   );
 };

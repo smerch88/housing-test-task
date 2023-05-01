@@ -58,7 +58,9 @@ export const Recomendations = () => {
               icon="apartments"
               variant={selectedType === 'apartment' ? 'primary' : 'ghost'}
               onClick={() => {
-                setSelectedType(selectedType === 'apartment' ? '' : 'apartment');
+                setSelectedType(
+                  selectedType === 'apartment' ? '' : 'apartment',
+                );
               }}
             >
               Apartment
@@ -68,6 +70,7 @@ export const Recomendations = () => {
         </div>
         {prevRef.current && nextRef.current && (
           <Swiper
+            className="ml-10"
             wrapperTag="ul"
             grabCursor={true}
             loop={true}
@@ -80,11 +83,11 @@ export const Recomendations = () => {
             breakpoints={{
               768: {
                 slidesPerView: 3,
-                spaceBetween: 15,
+                spaceBetween: 40,
               },
               1440: {
                 slidesPerView: 3,
-                spaceBetween: 15,
+                spaceBetween: 40,
               },
             }}
           >
