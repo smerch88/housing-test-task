@@ -5,6 +5,7 @@ import { withLayout } from '@/layout/Layout';
 import { Hero } from '@/page-components/Hero/Hero';
 import { Recomendations } from '@/page-components/Recomendations/Recomendations';
 import { Ready } from '@/page-components/Ready/Ready';
+import { Review } from '@/page-components/Review/Review';
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <Hero />
       <Recomendations />
       <Ready />
+      <Review />
     </>
   );
 };

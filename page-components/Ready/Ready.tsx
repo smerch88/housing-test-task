@@ -13,7 +13,7 @@ import { Autoplay } from 'swiper';
 
 export const Ready = () => {
   return (
-    <Section className="relative pb-[120px] ">
+    <Section className="sell-bg relative pb-[120px]">
       <div className="container">
         <div className="ml-10 grid grid-cols-2">
           <div>
