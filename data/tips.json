@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "personName": "Dianne Russell",
+      "personPath": "/images/featuredSlides/person1.png",
+      "title": "The things we need to check when we want to buy a house",
+      "path": "/images/tips/1.png",
+      "ttr": "4 min read",
+      "date": "25 Apr 2021"
+    },
+    {
+      "id": 2,
+      "personName": "Courtney Henry",
+      "personPath": "/images/featuredSlides/person2.png",
+      "title": "7 Ways to distinguish the quality of the house we want to buy",
+      "path": "/images/tips/2.png",
+      "ttr": "6 min read",
+      "date": "24 Apr 2021"
+    },
+    {
+      "id": 3,
+      "personName": "Darlene Robertson",
+      "personPath": "/images/featuredSlides/person3.png",
+      "title": "The best way to know the quality of the house we want to buy",
+      "path": "/images/tips/3.png",
+      "ttr": "2 min read",
+      "date": "24 Apr 2021"
+    },
+    {
+      "id": 4,
+      "personName": "Cameron Williamson",
+      "personPath": "/images/featuredSlides/person4.png",
+      "title": "12 Things to know before buying a house",
+      "path": "/images/tips/4.png",
+      "ttr": "8 min read",
+      "date": "25 Apr 2021"
+    }
+  ]
+}
