@@ -21,7 +21,7 @@ export const Review = () => {
             type: 'bullets',
             dynamicBullets: true,
           }}
-          className="pb-[140px]"
+          className=" !pb-[140px]"
           wrapperTag="ul"
           grabCursor={true}
           loop={true}
@@ -42,7 +42,7 @@ export const Review = () => {
             <SwiperSlide
               tag="li"
               key={card.id}
-              className="m-0 flex justify-center"
+              className="m-0 !flex !justify-center"
             >
               <ReviewCard
                 id={card.id}
