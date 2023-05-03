@@ -118,77 +118,86 @@ export const Ready = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <Swiper
-              className="absolute bottom-0 left-0 z-50 h-[168px] w-[296px]"
-              wrapperTag="ul"
-              grabCursor={false}
-              loop={true}
-              initialSlide={1}
-              modules={[Autoplay]}
-              allowTouchMove={false}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: true,
-              }}
-              breakpoints={{
-                768: {
-                  slidesPerView: 1,
-                  spaceBetween: 40,
-                },
-                1440: {
-                  slidesPerView: 1,
-                  spaceBetween: 40,
-                },
-              }}
-            >
-              {data.slides.map(card => (
-                <SwiperSlide
-                  tag="li"
-                  key={card.id}
-                  className="m-0 rounded-[4px]"
-                >
-                  <Image src={card.path} alt="house" fill object-fit="cover" />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <Swiper
-              className="absolute bottom-0 left-[308px] z-50 h-[80px] w-[200px]"
-              wrapperTag="ul"
-              grabCursor={false}
-              loop={true}
-              initialSlide={2}
-              modules={[Autoplay]}
-              allowTouchMove={false}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: true,
-              }}
-              breakpoints={{
-                768: {
-                  slidesPerView: 2,
-                  spaceBetween: 8,
-                },
-                1440: {
-                  slidesPerView: 2,
-                  spaceBetween: 8,
-                },
-              }}
-            >
-              {data.slides.map(card => (
-                <SwiperSlide
-                  tag="li"
-                  key={card.id}
-                  className="m-0 rounded-[4px]"
-                >
-                  <Image
-                    src={card.path}
-                    alt="house"
-                    fill
-                    object-position="center"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <div className="absolute bottom-0 left-0 z-50">
+              <Swiper
+                className="h-[168px] w-[296px]"
+                wrapperTag="ul"
+                grabCursor={false}
+                loop={true}
+                initialSlide={1}
+                modules={[Autoplay]}
+                allowTouchMove={false}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: true,
+                }}
+                breakpoints={{
+                  768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                  },
+                  1440: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                  },
+                }}
+              >
+                {data.slides.map(card => (
+                  <SwiperSlide
+                    tag="li"
+                    key={card.id}
+                    className="m-0 rounded-[4px]"
+                  >
+                    <Image
+                      src={card.path}
+                      alt="house"
+                      fill
+                      object-fit="cover"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+            <div className="absolute bottom-0 left-[308px] z-50 ">
+              <Swiper
+                className="h-[80px] w-[200px]"
+                wrapperTag="ul"
+                grabCursor={false}
+                loop={true}
+                initialSlide={2}
+                modules={[Autoplay]}
+                allowTouchMove={false}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: true,
+                }}
+                breakpoints={{
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 8,
+                  },
+                  1440: {
+                    slidesPerView: 2,
+                    spaceBetween: 8,
+                  },
+                }}
+              >
+                {data.slides.map(card => (
+                  <SwiperSlide
+                    tag="li"
+                    key={card.id}
+                    className="m-0 rounded-[4px]"
+                  >
+                    <Image
+                      src={card.path}
+                      alt="house"
+                      fill
+                      object-position="center"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
         </div>
       </div>
