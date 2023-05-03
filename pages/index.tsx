@@ -6,6 +6,7 @@ import { Hero } from '@/page-components/Hero/Hero';
 import { Recomendations } from '@/page-components/Recomendations/Recomendations';
 import { Ready } from '@/page-components/Ready/Ready';
 import { Review } from '@/page-components/Review/Review';
+import { Tips } from '@/page-components/Tips/Tips';
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <Recomendations />
       <Ready />
       <Review />
+      <Tips />
     </>
   );
 };
