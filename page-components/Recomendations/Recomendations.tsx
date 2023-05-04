@@ -29,13 +29,13 @@ export const Recomendations = () => {
   }, [filteredSlides]);
 
   return (
-    <Section className="relative pb-[120px]">
+    <Section className="relative pb-[120px] notXl:pb-[40px]">
       <div className="container">
-        <div className="mb-10 flex pt-2">
-          <Title tag="h2" className="ml-10 mr-[140px]">
+        <div className="mb-10 pt-2 xl:flex">
+          <Title tag="h2" className="xl:ml-10 xl:mr-[140px]">
             Featured House
           </Title>
-          <div className="mr-[139px] flex gap-8">
+          <div className="flex gap-8 xl:mr-[139px] notXl:mb-2 notXl:flex-wrap notXl:gap-2">
             <Button
               icon="house"
               variant={selectedType === 'house' ? 'primary' : 'ghost'}
@@ -70,7 +70,7 @@ export const Recomendations = () => {
         </div>
         {prevRef.current && nextRef.current && (
           <Swiper
-            className="ml-10"
+            className="xl:ml-10"
             wrapperTag="ul"
             grabCursor={true}
             loop={true}
@@ -81,11 +81,15 @@ export const Recomendations = () => {
             }}
             modules={[Navigation]}
             breakpoints={{
-              768: {
-                slidesPerView: 3,
+              320: {
+                slidesPerView: 1,
                 spaceBetween: 40,
               },
-              1440: {
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1200: {
                 slidesPerView: 3,
                 spaceBetween: 40,
               },

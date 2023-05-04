@@ -16,14 +16,14 @@ export const Footer: FC = () => {
     <footer className="footer-bg pb-10 xl:pb-[120px]">
       <div className="container text-lg xl:flex xl:justify-between">
         <div>
-          <div className="mb-6 mdOnly:flex mdOnly:justify-between">
+          <div className="mb-6">
             <div className="mb-6 smOnly:mx-auto">
               <Logo
                 className="mb-4 block smOnly:mx-auto"
                 width={36}
                 height={36}
               />
-              <p className="mb-6 max-w-[320px] text-sm leading-[1.71] text-secondary opacity-75 notXl:text-center">
+              <p className="mb-6 max-w-[320px] text-sm leading-[1.71] text-secondary opacity-75 notXl:mx-auto notXl:text-center">
                 We provide information about properties such as houses, villas
                 and apartments to help people find their dream home
               </p>

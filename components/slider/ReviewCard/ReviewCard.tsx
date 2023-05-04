@@ -18,8 +18,8 @@ export const ReviewCard: FC<ReviewCardProps> = ({
   rating,
 }) => {
   return (
-    <CardWrapper tag="div" className="relative w-[740px]">
-      <div className="relative h-[400px] w-[740px]">
+    <CardWrapper tag="div" className="relative w-full xl:max-w-[740px]">
+      <div className="relative h-[400px] max-w-[740px]">
         <Image
           src={path}
           alt={'house image'}
@@ -28,7 +28,7 @@ export const ReviewCard: FC<ReviewCardProps> = ({
           object-cover="true"
         />
       </div>
-      <div className="absolute bottom-[-105px] left-1/2 w-full max-w-[612px] -translate-x-1/2 transform rounded-[16px] bg-white p-8">
+      <div className="absolute bottom-[-105px] left-1/2 w-full max-w-[612px] -translate-x-1/2 transform rounded-[16px] bg-white p-8 notXl:p-4">
         <Title
           tag="h3"
           className="mb-4 !text-[20px] font-semibold leading-[calc(25/20)]"
@@ -40,7 +40,7 @@ export const ReviewCard: FC<ReviewCardProps> = ({
         </Paragraph>
 
         <div className="flex justify-between">
-          <div className="flex">
+          <div className="flex notXl:flex-wrap">
             <div className="my-auto mr-6">
               <div className="relative h-10 w-10">
                 <Image
