@@ -28,9 +28,9 @@ export const TipsCard: FC<TipsCardProps> = ({
         )}
       >
         <div
-          className={cn('relative w-full', {
-            'h-[280px] max-w-[560px]': big,
-            'h-[144px] max-w-[200px]': !big,
+          className={cn('relative ', {
+            'h-[280px] w-full max-w-[560px]': big,
+            'h-[144px] w-[200px]': !big,
           })}
         >
           <Image
