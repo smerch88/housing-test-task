@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 export const Review = () => {
   return (
-    <Section className="relative pb-[120px]">
+    <Section className="review-bg relative pb-[120px]">
       <div className="container">
         <Title tag="h2" className="mb-10 text-center">
           What Our User Say About Us

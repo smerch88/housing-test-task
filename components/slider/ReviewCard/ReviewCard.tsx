@@ -20,7 +20,13 @@ export const ReviewCard: FC<ReviewCardProps> = ({
   return (
     <CardWrapper tag="div" className="relative w-[740px]">
       <div className="relative h-[400px] w-[740px]">
-        <Image src={path} alt={'house image'} className="" fill object-cover />
+        <Image
+          src={path}
+          alt={'house image'}
+          className=""
+          fill
+          object-cover="true"
+        />
       </div>
       <div className="absolute bottom-[-105px] left-1/2 w-full max-w-[612px] -translate-x-1/2 transform rounded-[16px] bg-white p-8">
         <Title
@@ -37,7 +43,12 @@ export const ReviewCard: FC<ReviewCardProps> = ({
           <div className="flex">
             <div className="my-auto mr-6">
               <div className="relative h-10 w-10">
-                <Image src={personPath} alt={'avatar'} fill object-cover />
+                <Image
+                  src={personPath}
+                  alt={'avatar'}
+                  fill
+                  object-cover="true"
+                />
               </div>
             </div>
             <div>

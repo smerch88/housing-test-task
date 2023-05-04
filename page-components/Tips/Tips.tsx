@@ -6,7 +6,7 @@ import { TipsCard } from '@/components/common/TipsCard';
 
 export const Tips = () => {
   return (
-    <Section className="relative pb-[120px] pt-10">
+    <Section className="tips-bg relative pb-[120px] pt-10">
       <div className="container">
         <Title tag="h2" className="mx-auto mb-6 max-w-[500px] text-center">
           Find out more about selling and buying homes
