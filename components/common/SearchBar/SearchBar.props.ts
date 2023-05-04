@@ -4,4 +4,6 @@ export interface SearchBarProps {
   onChange: (newValue: string) => void;
   placeholder?: string;
   className?: string;
+  buttonText?: string;
+  arrow?: boolean;
 }

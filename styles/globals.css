@@ -69,17 +69,28 @@
 
 /* Classes for background Sell */
 
-/* .sell-bg {
-  background-image: url('/images/sell/spot1.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto;
-} */
 .sell-bg {
   background-image: url('/images/sell/spot1.svg'), url('/images/sell/spot2.svg');
   background-repeat: no-repeat;
   background-position: bottom right, top right;
   background-size: auto, auto;
 }
-
 /* End classes background Sell */
+
+/* Classes for Subscribe card Bg */
+.subscribe-bg {
+  background-image: url('/images/subscribe/1.png'),
+    url('/images/subscribe/2.png'), url('/images/subscribe/3.png'),
+    url('/images/subscribe/4.png'), url('/images/subscribe/5.png'),
+    url('/images/subscribe/6.png'), url('/images/subscribe/7.png'),
+    url('/images/subscribe/8.png'), url('/images/subscribe/bg.png');
+  background-repeat: no-repeat;
+  background-position: 
+  /* 1 */ top 38px left 44px,
+    /* 2 */ top 44px right 200px, /* 3 */ top 71px left 204px,
+    /* 4 */ top 107px right 82px, /* 5 */ top 143px right 200px,
+    /* 6 */ top 173px left 67px, /* 7 */ top 178px left 195px,
+    /* 8 */ top 197px right 73px, /* bg */ center;
+  background-size: auto;
+}
+/* End classes Subscribe card Bg */

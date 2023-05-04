@@ -11,6 +11,8 @@ export const SearchBar: FC<SearchBarProps> = ({
   onChange,
   placeholder = 'Search',
   className,
+  buttonText = 'Search',
+  arrow = true,
 }) => {
   return (
     <div className={cn('relative flex rounded-[32px] border p-1', className)}>
@@ -20,19 +22,32 @@ export const SearchBar: FC<SearchBarProps> = ({
       </span>
       <input
         type="text"
-        className="w-full rounded-[32px] border-none bg-transparent pl-14 text-secondary"
+        className="w-full rounded-[32px] border-none bg-white pl-14 text-secondary"
         placeholder={placeholder}
         value={value}
         onChange={e => onChange(e.target.value)}
       />
-      <Button
-        type="button"
-        variant="secondary"
-        arrow="right"
-        onClick={() => console.log('search')}
-      >
-        Search
-      </Button>
+      <div className="whitespace-nowrap">
+        {arrow ? (
+          <Button
+            type="button"
+            variant="secondary"
+            arrow="right"
+            onClick={() => console.log('search')}
+            className="w-full"
+          >
+            {buttonText}
+          </Button>
+        ) : (
+          <Button
+            type="button"
+            variant="secondary"
+            onClick={() => console.log('subscribe')}
+          >
+            {buttonText}
+          </Button>
+        )}
+      </div>
     </div>
   );
 };
