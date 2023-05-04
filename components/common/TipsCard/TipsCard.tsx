@@ -33,7 +33,7 @@ export const TipsCard: FC<TipsCardProps> = ({
             alt={'house image'}
             className="rounded-[16px]"
             fill
-            object-cover
+            object-cover="true"
           />
         </div>
         <div className={big ? 'w-full' : 'max-w-[340px]'}>
@@ -44,7 +44,7 @@ export const TipsCard: FC<TipsCardProps> = ({
                 alt={'person image'}
                 className="rounded-[16px]"
                 fill
-                object-cover
+                object-cover="true"
               />
             </div>
             <Paragraph className="!text-dark" variant="secondary">

@@ -13,7 +13,7 @@ import { MenuItemProps } from '../Header/Header.props';
 
 export const Footer: FC = () => {
   return (
-    <footer className="pb-10 xl:pb-[120px]">
+    <footer className="footer-bg pb-10 xl:pb-[120px]">
       <div className="container text-lg xl:flex xl:justify-between">
         <div>
           <div className="mb-6 mdOnly:flex mdOnly:justify-between">

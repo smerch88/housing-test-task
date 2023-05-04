@@ -73,7 +73,7 @@
   background-image: url('/images/sell/spot1.svg'), url('/images/sell/spot2.svg');
   background-repeat: no-repeat;
   background-position: bottom right, top right;
-  background-size: auto, auto;
+  background-size: contain, contain;
 }
 /* End classes background Sell */
 
@@ -94,3 +94,24 @@
   background-size: auto;
 }
 /* End classes Subscribe card Bg */
+
+/* Classes for background Tips */
+
+.tips-bg {
+  background-image: url('/images/tips/spot1.svg'), url('/images/tips/spot2.svg');
+  background-repeat: no-repeat;
+  background-position: top 20% left, top left;
+  background-size: contain;
+}
+/* End classes background Tips */
+
+/* Classes for background Footer */
+
+.footer-bg {
+  background-image: url('/images/footer/spot1.svg'),
+    url('/images/footer/spot2.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 10% right, bottom right;
+  background-size: contain;
+}
+/* End classes background Footer */
