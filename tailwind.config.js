@@ -28,7 +28,9 @@ module.exports = {
           xl: '120px',
         },
       },
-      backgroundImage: {},
+      backgroundImage: {
+        subscribe: "url('/images/subscribe/bg.png')",
+      },
       colors: {
         dark: '#3C4563',
         primary: '#0E1735',

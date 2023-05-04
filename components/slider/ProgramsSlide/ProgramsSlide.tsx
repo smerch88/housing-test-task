@@ -25,7 +25,7 @@ export const ProgramsSlide: FC<ProgramsSlideProps> = ({
         <div>
           <Title
             tag="h3"
-            className="mb-[2px] text-[16px] leading-[calc(24/16)]"
+            className="mb-[2px] text-[14px] leading-[calc(24/16)]"
           >
             {title}
           </Title>

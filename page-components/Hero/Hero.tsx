@@ -54,12 +54,10 @@ export const Hero = () => {
           </ul>
           {/*end of partners */}
         </div>
-        <div className="absolute bottom-[-52px] right-0 w-[50%] pl-6">
+        <div className="absolute bottom-[-52px] right-0 w-[51%] pl-6">
           <Swiper
             wrapperTag="ul"
             grabCursor={false}
-            // slidesPerView={'auto'}
-            // rewind={true}
             loop={true}
             modules={[Autoplay]}
             allowTouchMove={false}

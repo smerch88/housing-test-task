@@ -1,7 +1,6 @@
 import { Button } from '@/components/button/Button';
 import { Section } from '@/components/common/Section';
 import { Title } from '@/components/typography/Title';
-import Image from 'next/image';
 import data from '@/data/tips.json';
 import { TipsCard } from '@/components/common/TipsCard';
 
