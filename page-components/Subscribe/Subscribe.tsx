@@ -1,9 +1,6 @@
-import { Button } from '@/components/button/Button';
+import { SearchBar } from '@/components/common/SearchBar';
 import { Section } from '@/components/common/Section';
 import { Title } from '@/components/typography/Title';
-import data from '@/data/tips.json';
-import { TipsCard } from '@/components/common/TipsCard';
-import { SearchBar } from '@/components/common/SearchBar';
 import { useState } from 'react';
 
 export const Subscribe = () => {
@@ -13,7 +10,7 @@ export const Subscribe = () => {
     setSearchValue(newValue);
   };
   return (
-    <Section className="relative pb-[120px]">
+    <Section className="relative pb-[120px] notXl:pb-[40px]">
       <div className="container">
         <div className="subscribe-bg w-full rounded-[32px] bg-auto bg-no-repeat py-[65px]">
           <Title tag="h2" className="mx-auto mb-8 max-w-[450px] text-center">

@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 export const Review = () => {
   return (
-    <Section className="review-bg relative pb-[120px]">
+    <Section className="review-bg relative pb-[120px] notXl:pb-[40px]">
       <div className="container">
         <Title tag="h2" className="mb-10 text-center">
           What Our User Say About Us
@@ -21,13 +21,17 @@ export const Review = () => {
             type: 'bullets',
             dynamicBullets: true,
           }}
-          className=" !pb-[140px]"
+          className="!pb-[140px] "
           wrapperTag="ul"
           grabCursor={true}
           loop={true}
           initialSlide={0}
           modules={[Navigation, Pagination]}
           breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
             768: {
               slidesPerView: 1,
               spaceBetween: 0,

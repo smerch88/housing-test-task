@@ -21,7 +21,7 @@ export const Button: FC<ButtonProps> = ({
   return (
     <button
       className={cn(
-        'flex items-center gap-2 rounded-[32px] border-[1px] border-solid px-6 py-3',
+        'flex items-center gap-2 rounded-[32px] border-[1px] border-solid px-6 py-3 notXl:w-full',
         className,
         {
           ['border-buttonBg bg-buttonBg fill-current text-accent']:

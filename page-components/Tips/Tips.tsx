@@ -6,7 +6,7 @@ import { TipsCard } from '@/components/common/TipsCard';
 
 export const Tips = () => {
   return (
-    <Section className="tips-bg relative pb-[120px] pt-10">
+    <Section className="tips-bg relative pb-[120px] pt-10 notXl:pb-[40px]">
       <div className="container">
         <Title tag="h2" className="mx-auto mb-6 max-w-[500px] text-center">
           Find out more about selling and buying homes
@@ -14,7 +14,7 @@ export const Tips = () => {
         <Button variant="secondary" className="mx-auto mb-10">
           More Artikel
         </Button>
-        <div className="grid grid-cols-2 gap-[68px]">
+        <div className="grid grid-cols-2 gap-[68px] notXl:grid-cols-1">
           <ul className="flex flex-wrap gap-11">
             {data.cards
               .slice(0, 3)

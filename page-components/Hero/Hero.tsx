@@ -17,9 +17,9 @@ export const Hero = () => {
     setSearchValue(newValue);
   };
   return (
-    <Section className="hero-bg pb-[230px] pt-[182px]">
+    <Section className="hero-bg pt-[112px] xl:pb-[230px] xl:pt-[182px]">
       <div className="container relative">
-        <div className="max-w-[510px]">
+        <div className="max-w-[510px] notXl:text-center">
           <Title tag="h1" className="font-outline-1 mb-6">
             find the place to <br /> live{' '}
             <span className="font-outline-0 heading text-white">
@@ -40,7 +40,7 @@ export const Hero = () => {
           />
           <Paragraph className="leading-[32/16]">Our Partnership</Paragraph>
           {/* partners */}
-          <ul className="flex gap-8">
+          <ul className="gap-8 xl:flex notXl:grid notXl:grid-cols-2 notXl:justify-center">
             {data.partners.map(item => (
               <li key={item.id}>
                 <Image
@@ -54,7 +54,7 @@ export const Hero = () => {
           </ul>
           {/*end of partners */}
         </div>
-        <div className="absolute bottom-[-52px] right-0 w-[51%] pl-6">
+        <div className="absolute bottom-[-52px] right-0 hidden w-[51%] pl-6 xl:block">
           <Swiper
             wrapperTag="ul"
             grabCursor={false}

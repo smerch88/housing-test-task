@@ -1,14 +1,13 @@
-import { FC, useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
-import { useMediaQuery } from 'react-responsive';
 import cn from 'classnames';
+import { FC, useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-scroll';
 
-import { BtnLink } from '@/components/button/BtnLink';
-import { Logo } from '@/components/typography/Logo';
-
-import { MenuItemProps } from './Header.props';
-import data from '@/data/header.json';
 import { Button } from '@/components/button/Button';
+import { Logo } from '@/components/typography/Logo';
+import { MenuItemProps } from './Header.props';
+
+import data from '@/data/header.json';
 
 export const Header: FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -30,8 +29,8 @@ export const Header: FC = () => {
       className={`absolute left-0 top-0 z-40 flex w-full items-center bg-transparent ${'shadow-header absolute'} pt-[46px]`}
     >
       <div className="container">
-        <div className={cn('relative -mx-5 flex items-center justify-between')}>
-          <div className="ml-5 max-w-[200px] md:ml-8">
+        <div className={cn('relative flex items-center justify-between')}>
+          <div className="max-w-[200px]">
             <Logo className="" />
           </div>
 
@@ -66,7 +65,7 @@ export const Header: FC = () => {
               <nav
                 id="navbarCollapse"
                 className={cn(
-                  'navbar notXl:shadow-header absolute right-0 top-0 z-30 w-full rounded bg-white px-6 py-16 duration-300 md:py-4 xl:visible xl:static xl:w-full xl:border-none xl:!bg-transparent xl:p-0 xl:opacity-100 smOnly:landscape:py-4 mdOnly:landscape:py-4',
+                  'navbar notXl:shadow-header absolute right-0 top-0 z-30 w-full rounded bg-dark px-6 py-16 duration-300 md:py-4 xl:visible xl:static xl:w-full xl:border-none xl:!bg-transparent xl:p-0 xl:opacity-100 smOnly:landscape:py-4 mdOnly:landscape:py-4',
                   navbarOpen
                     ? 'visibility top-full opacity-100'
                     : 'invisible top-[120%] opacity-0',
@@ -93,19 +92,11 @@ export const Header: FC = () => {
                   ))}
                 </ul>
 
-                <BtnLink
-                  className="mx-auto md:hidden"
-                  href={'program'}
-                  onClick={navbarToggleHandler}
-                  scroll
-                  variant="ghost"
-                >
-                  {data.btn}
-                </BtnLink>
+                <Button className="mx-auto md:hidden">{data.btn}</Button>
               </nav>
             </div>
           </div>
-          <Button className=" hidden min-w-[110px] text-[14px] font-semibold leading-[calc(22/14)] text-accent_heavy md:ml-5 md:block md:text-center mdOnly:mr-20">
+          <Button className="hidden min-w-[110px] text-[14px] font-semibold leading-[calc(22/14)] text-accent_heavy md:ml-5 md:block md:text-center xl:ml-0 mdOnly:mr-20">
             {data.btn}
           </Button>
         </div>
