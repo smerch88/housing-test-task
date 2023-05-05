@@ -12,8 +12,6 @@
 1. Clone repo
 
 1. Recommended for use **npm** - `npm install`
-1. Create file `.env.local` in the project root using `.env.local.example` as a
-   template
 1. `npm run dev`
 1. Open `http://localhost:3000`.
 

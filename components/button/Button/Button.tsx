@@ -21,13 +21,14 @@ export const Button: FC<ButtonProps> = ({
   return (
     <button
       className={cn(
-        'flex items-center gap-2 rounded-[32px] border-[1px] border-solid px-6 py-3 notXl:w-full',
+        'flex items-center gap-2 rounded-[32px] border-[1px] border-solid px-6 py-3 transition-all duration-300	ease-in-out notXl:w-full		',
         className,
         {
-          ['border-buttonBg bg-buttonBg fill-current text-accent']:
+          ['border-buttonBg bg-buttonBg fill-current text-accent  hover:bg-accent hover:text-white']:
             variant == 'primary',
-          ['border-border fill-current text-secondary']: variant == 'ghost',
-          ['border-accent bg-accent fill-current text-white']:
+          ['border-border fill-current text-secondary hover:border-accent hover:bg-buttonBg hover:text-accent']:
+            variant == 'ghost',
+          ['border-accent bg-accent fill-current text-white hover:border-accent hover:bg-buttonBg hover:text-accent']:
             variant == 'secondary',
         },
         icon && 'text-[18px] font-medium leading-[calc(28/18)]',
